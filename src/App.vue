@@ -1,30 +1,62 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <!-- Start Header  -->
+    <header class="mb-5">
+      <nav-bar/>
+    </header>
+    <!-- End Header  -->
+
+
+
+    <!-- Start Landing -->
+
+    <section class="landing my-5 py-5">
+
+       <div class="container">
+
+        <div class="row ">
+          <div class="col-md-6">
+              <h1 class="mb-3 fw-bold lh-sm">We are Digital 
+                <br>
+                Agency.</h1>
+
+                <p class="text-muted mb-4">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </p>
+
+                <button class="btn btn-dark rounded-pill px-4 py-2">Get Started</button>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+
+
+       </div>
+
+
+      
+    </section>
+
+    <!-- End Landing  -->
+
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script>
+import NavBar from './components/NavBar.vue';
+
+export default {
+  components: {
+    NavBar
+  }
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+</script>
+
+<style>
+@import '../public/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif !important;
 }
 </style>
